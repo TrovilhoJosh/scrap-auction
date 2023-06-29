@@ -1,11 +1,16 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Scrap Auction</title>
 </head>
+
 <body>
+<main>
+
+<h1>Case</h1>
 
 <?php
 
@@ -28,23 +33,41 @@ $elementos = [
     '//*[@id="lote_1435"]/div[3]/div[3]/h6[8]/text()'
 ];
 
+$resultados = array();
+
 foreach ($elementos as $elemento) {
     $domNodeList = $xPath->query($elemento);
+    $dados = array();
     
     /** @var DOMNode $node */
     foreach ($domNodeList as $node) {
-        $value = $node->nodeValue;
-        
-        if (strpos($elemento, 'a/@href') !== false) {
-            echo "<a href=".$value." target='_blank'>". $value ."</a> <br><br>";
-
-        } else {
-            echo $value.PHP_EOL."<br><br>";
-        }
+        $dados[] = $node->nodeValue;
     }
+    
+    $resultados[] = $dados;
 }
+
+  $titulo = $resultados[0][0];
+  $avaliacao = $resultados[4][0];
+  $data = $resultados[5][0];
+  $valorSegunda = $resultados[6][0];
+  $endereco = $resultados[1][0];
+  $documento = $resultados[3][0];
+  $imagem = $resultados[2][0];
+
+  echo "Título: " . $titulo . "<br><br>";
+  echo "Avaliacao: " . $avaliacao . "<br><br>";
+  echo "Data da primeira avaliacao: " . $data . "<br><br>";
+  echo "Valor da Segunda Praca: " . $valorSegunda . "<br><br>";
+  echo "Endereco: " . $endereco . "<br><br>";
+  echo "Link do documento: <a href= ".$documento. " target='_blank'>". $documento ."</a> <br><br>";
+  echo "Link da imagem: <a href=".$imagem. " target='_blank'>". $imagem ."</a> <br><br>";
+  echo '<img src="'. $imagem .'"><br>';
 
 ?>
 
+</main>
+
 </body>
 </html>
+
