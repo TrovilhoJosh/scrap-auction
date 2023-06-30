@@ -19,7 +19,7 @@ $link = $_GET['link'] ?? '';
 
 <br>
 
-<p><b>Observação:</b> O link deve ser da página do lote, onde possui todas informações disponíveis e deve seguir o padrão de rotas do site, contendo /item/idDoLote/detalhes?page=1
+<p><b>Observação:</b> O link deve ser da página de detalhes do lote, onde possui todas informações disponíveis e deve seguir o padrão de rotas do site, contendo /item/idDoLote/detalhes?page=1
 </p>
 
 
