@@ -44,13 +44,23 @@ p {
 }
 
 a {
-    color: black;
-    padding: 0 3px;
-    word-break: break-all;
+  color: black;
+  padding: 0 3px;
+  word-break: break-all;
+}
+
+a.linkLogo {
+  display: block;
+  margin: 0 auto;
+  max-width: fit-content;
 }
 
 a:hover {
   background-color: #C7A262;
+}
+
+a.linkLogo:hover {
+  background-color: initial;
 }
 
 img {

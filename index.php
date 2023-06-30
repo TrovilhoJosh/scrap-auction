@@ -14,7 +14,8 @@ $link = $_GET['link'] ?? '';
 ?>
 <main>
 
-<img src="logo.png" class="logo" alt="Agostinho Leilões">
+<a href="https://agostinholeiloes.com.br/" target="_blank" class="linkLogo"><img src="logo.png" class="logo" alt="Agostinho Leilões">
+</a>
 
 <br>
 
