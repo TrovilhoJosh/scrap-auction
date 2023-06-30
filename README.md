@@ -12,7 +12,7 @@ Este é um projeto criado para coletar dados do site [agostinholeiloes.com.br](h
 
 ## Como utilizar
 
-Para utilizar o site, sera necessário colar um link válido, o link deve ser acessado no site [agostinholeiloes.com.br](https://agostinholeiloes.com.br/), ao clicar em um lote desejado, você terá que ir na página de detalhes do lote, nessa página terá a url válida, copiando ela, você poderá colar no site e viozualizar as informações disponíveis.
+Para utilizar o site, sera necessário colar um link válido, o link deve ser acessado no site [agostinholeiloes.com.br](https://agostinholeiloes.com.br/), ao clicar em um lote desejado, você terá que ir na página de detalhes do lote, nessa página terá a url válida, copiando ela, você poderá colar no site e vizualizar as informações disponíveis.
 
 ## Uso/Exemplos
 
